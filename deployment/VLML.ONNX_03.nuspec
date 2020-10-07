@@ -23,6 +23,6 @@
     <file src="..\Resources\**" target="Resources\" exclude="" />
     <file src="..\Examples\**" target="Examples\" exclude="" />
     <file src="*.vl" target="*.vl" exclude="" />
-    <file src="**\*.vl" target="**\*.vl" exclude="" />
+    <file src="vl\*.vl" target="vl\*.vl" exclude="" />
   </files>
 </package>
