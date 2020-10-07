@@ -5352,8 +5352,8 @@
   <NugetDependency Id="IERKAOGX2vfM672dqE3OBW" Location="VL.OpenCV" Version="1.1.2" />
   <PlatformDependency Id="J45ckGRiQkRP4UImAEmskQ" Location="System.Runtime.InteropServices" />
   <NugetDependency Id="VEKZPyDSl6JMPS75XlXKv2" Location="OpenCvSharp4" Version="4.0.1.20190326" />
-  <PlatformDependency Id="DpFL9hterZOOIUZYJQ10uK" Location="./src/OnnxTensors/OnnxTensors/bin/Debug/netstandard2.0/OnnxTensors.dll" />
   <NugetDependency Id="GrJdyxp1i5qMAnjMB0jQQQ" Location="CNTK.Deps.cuDNN" Version="2.7.0" />
   <NugetDependency Id="Dc3Ky4os5weOo04LaspEZt" Location="CNTK.Deps.Cuda" Version="2.7.0" />
   <NugetDependency Id="FmRgZXeUtYdLt9rjOJxSFg" Location="System.Memory" Version="4.5.3" />
+  <PlatformDependency Id="ErKqWxtymAQPUVtbUY2Eyn" Location="./lib/OnnxTensors.dll" />
 </Document>

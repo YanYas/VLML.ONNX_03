@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.2.0.270" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.2.0" />
-  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.3.0.43" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.3.0-0043-g2cdd73bab2" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value" CanvasType="FullCategory" />
     <!--
@@ -198,7 +197,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FlS9CTQr1NKMSfSueH1Bj3" Location="VL.OpenCV" Version="1.1.0" />
-  <DocumentDependency Id="BPGQbUeHgccNkKrl3EEtJd" Location="../../VLML.ONNX.vl" />
-  <DocumentDependency Id="FhNW86jXwFfLSGXZThXazn" Location="../../VLML.ONNX2.vl" />
+  <NugetDependency Id="FlS9CTQr1NKMSfSueH1Bj3" Location="VL.OpenCV" Version="1.1.2" />
+  <NugetDependency Id="P7v6qhBrOxeO7cmFNedGW0" Location="VLML.ONNX_03" Version="0.0.0.0" />
 </Document>

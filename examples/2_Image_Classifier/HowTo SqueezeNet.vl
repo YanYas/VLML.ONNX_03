@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2019.1.0-0889-g2c8c66dd08" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.3.0.43" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.3.0-0043-g2cdd73bab2" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value" CanvasType="FullCategory" />
     <!--
@@ -177,7 +177,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="-58,505,181,292" Id="DaK5jxw4frIOhg2r57JZHI">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               <FullNameCategoryReference ID="Primitive" />
@@ -185,6 +185,8 @@
             <Pin Id="SPiOIlL9HhML9uAoXwVSjg" Name="Force" Kind="InputPin" />
             <Pin Id="SgRf318HkbAPnRW37N1xW7" Name="Dispose Cached Outputs" Kind="InputPin" />
             <Pin Id="NorzcRHpxg5PMCtlXPkK7V" Name="Has Changed" Kind="OutputPin" />
+            <ControlPoint Id="NEzFu4bP2FBPGcOH3Xr87w" Bounds="8,791" Alignment="Bottom" />
+            <ControlPoint Id="IR2QK1Kz9BoPKmzC3HN0p0" Bounds="-3,511" Alignment="Top" />
             <Patch Id="OKmlcYiQHdBMAE5K90rea4" ManuallySortedPins="true">
               <Patch Id="Kn7E223knCaLyHxKqZ9xS4" Name="Create" ManuallySortedPins="true" />
               <Patch Id="NlPL0n3NCGnLhQ9E16cMny" Name="Then" ManuallySortedPins="true" />
@@ -210,7 +212,7 @@
                 <Pin Id="NeMSx8ue28xM7KjEbwTbQI" Name="Attributes" Kind="OutputPin" />
               </Node>
               <Node Bounds="-6,627,117,150" Id="Ap9PQrCvpcTNQ25Mrbvllm">
-                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                   <FullNameCategoryReference ID="Primitive" />
@@ -251,11 +253,9 @@
                 <ControlPoint Id="RQV7Mja7s8iPsrigGBOFs9" Bounds="8,771" Alignment="Bottom" />
               </Node>
             </Patch>
-            <ControlPoint Id="NEzFu4bP2FBPGcOH3Xr87w" Bounds="8,791" Alignment="Bottom" />
-            <ControlPoint Id="IR2QK1Kz9BoPKmzC3HN0p0" Bounds="-3,511" Alignment="Top" />
           </Node>
           <Node Bounds="367,928,377,305" Id="LY0qXtesSmwMvHP0A5Rw3Q">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -422,7 +422,7 @@
             <Pin Id="TsIsxLDBr8FO42P69zekXc" Name="Count" Kind="OutputPin" />
           </Node>
           <Node Bounds="357,1397,90,164" Id="JYICwysiKCyOZnT4CrIaLz">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <FullNameCategoryReference ID="Primitive" />
@@ -528,7 +528,7 @@
             </Patch>
           </Node>
           <Node Bounds="585,1452,96,80" Id="Dee3koyaSl6PxJE9fHc1y3">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <FullNameCategoryReference ID="Primitive" />
@@ -555,7 +555,7 @@
             <ControlPoint Id="CWvH1vaQB2qNQPxRCfxagR" Bounds="664,1526" Alignment="Bottom" />
           </Node>
           <Node Bounds="73,1157,76,19" Id="LA9N3wAbmFPOzkCMChJ6sP">
-            <p:NodeReference LastCategoryFullName="VLML.Utils" LastSymbolSource="VLML.ONNX.vl">
+            <p:NodeReference LastCategoryFullName="VLML.Utils" LastSymbolSource="VLML.ONNX_03.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="OneHotIndex" />
             </p:NodeReference>
@@ -689,6 +689,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="D5gmDcpMSriOvwIjyBmZou" Location="VLML.ONNX" Version="0.0.0.0" />
-  <NugetDependency Id="FlS9CTQr1NKMSfSueH1Bj3" Location="VL.OpenCV" Version="0.2.99-alpha" />
+  <NugetDependency Id="FlS9CTQr1NKMSfSueH1Bj3" Location="VL.OpenCV" Version="1.1.2" />
+  <NugetDependency Id="Bp0myWGrH3YLhxF2Fc3uCt" Location="VLML.ONNX_03" Version="0.0.0.0" />
 </Document>
