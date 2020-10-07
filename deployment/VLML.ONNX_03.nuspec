@@ -22,7 +22,7 @@
     <file src="..\lib-native\**" target="lib-native\" exclude="" />
     <file src="..\Resources\**" target="Resources\" exclude="" />
     <file src="..\Examples\**" target="Examples\" exclude="" />
-    <file src="VLML.ONNX_03.vl" target="VLML.ONNX_03.vl" exclude="" />
+    <file src=".\VLML.ONNX_03.vl" target=".\VLML.ONNX_03.vl" exclude="" />
     <file src="vl\**" target="vl\" exclude="" />
   </files>
 </package>
