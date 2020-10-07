@@ -15,7 +15,7 @@
     <dependencies>
         <dependency id="CNTK.Deps.Cuda" version="2.7.0"/>
         <dependency id="CNTK.Deps.CuDNN" version="2.7.0"/>
-        <dependency id="System.Memory" version="4.5.3"
+        <dependency id="System.Memory" version="4.5.3"/>
     </dependencies>
   </metadata>
   <files>
