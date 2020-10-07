@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2019.1.0-0889-g2c8c66dd08" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" LanguageVersion="2020.2.0.270" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2020.2.0" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Value" CanvasType="FullCategory" />
@@ -57,7 +57,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="OfmjCztZjdGNTzh8IMFbTd" Name="Bounds" Kind="InputPin" DefaultValue="1425, 376, 277, 300">
+            <Pin Id="OfmjCztZjdGNTzh8IMFbTd" Name="Bounds" Kind="InputPin" DefaultValue="1011, 188, 555, 578">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -117,29 +117,9 @@
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="565,365,125,19" Id="O5xDvp845qSLSf5iQzvqn4">
-            <p:NodeReference LastCategoryFullName="OpenCV.Source" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="VideoIn" />
-            </p:NodeReference>
-            <Pin Id="FbcomcxthtxPIZpiD9wAhp" Name="Video Input Device" Kind="InputPin" />
-            <Pin Id="JHg7z8DPgRyP6NKiVvjAQt" Name="Width" Kind="InputPin" />
-            <Pin Id="Lf5J1wDtsppMlWmYgz7dqd" Name="Height" Kind="InputPin" />
-            <Pin Id="CiP7R90JqCMQDAix5P15Zu" Name="FPS" Kind="InputPin" />
-            <Pin Id="QeTdAv8y20KMESlaF1ivVm" Name="FourCC" Kind="InputPin" />
-            <Pin Id="VRWTKtx6IjJNUKQuYouocx" Name="Show Properties" Kind="InputPin" />
-            <Pin Id="OGwsPjuotOsO4nsUOOSSVL" Name="Enabled" Kind="InputPin" />
-            <Pin Id="RM1cJzb7ZyQL8J188NgQs4" Name="Image" Kind="OutputPin" />
-            <Pin Id="VCCX095GaCfLnWLVpwFxYW" Name="Supported Formats" Kind="OutputPin" />
-          </Node>
           <Overlay Id="GkuOVr6B85TQRCcakmrgev" Name="Works with video" Bounds="399,327,313,80">
             <p:ColorIndex p:Type="Int32">4</p:ColorIndex>
           </Overlay>
-          <Pad Id="VYyOAsN3o2AO0jxg6jPoAM" Comment="Enabled" Bounds="764,327,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="Nzu7Y1KY7jdOEFVJICeIrl" Comment="" Bounds="422,432" isIOBox="true" />
           <ControlPoint Id="K7ODSG90zhQQZHYh3pNQsE" Bounds="208,470" />
           <Node Bounds="324,849,85,19" Id="STZ7KcF5b5GPtWC0oKEkEM">
@@ -159,28 +139,66 @@
             <Pin Id="QnzleUXMJ36QC30yIuGomh" Name="Output" Kind="OutputPin" />
           </Node>
           <ControlPoint Id="TVUM5Lhce0vLWZ0lkEQeKl" Bounds="211,743" />
+          <Node Bounds="533,1004" Id="UcjdV23KRs6LgyMKNojrEp">
+            <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="OpenCV" />
+              <Choice Kind="OperationCallFlag" Name="ImageWriter" />
+            </p:NodeReference>
+            <Pin Id="VJuzuWpPl3DNYts9Olamhg" Name="Input" Kind="InputPin" />
+            <Pin Id="LSTAHquLQxnLxgbfxeUnzO" Name="Filename" Kind="InputPin" />
+            <Pin Id="BwLRSagh5bnPtcO0V9Eac4" Name="Save" Kind="InputPin" />
+            <Pin Id="CtvDdhL4NWpOGDGrxMTnnG" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Uk7BzxFNWcjMRiAY5XBRug" Comment="Filename" Bounds="553,939,232,17" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\BabyTeaser.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OqX89pIzQpRL75h8uuprVa" Comment="Save" Bounds="683,991,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Kb9ww7Bk8LbQB5qHpmBMDe" Comment="Width" Bounds="443,767,35,15" ShowValueBox="true" isIOBox="true" Value="1280">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="GrCDiYokH5APtKgfPZV2mQ" Comment="Height" Bounds="460,797,35,15" ShowValueBox="true" isIOBox="true" Value="640">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="CeSpNUykYr4MEjdBKV8mIq" Name="Create" />
-        <Patch Id="AFWHnnKwDoSMYgwtrogLS8" Name="Update" />
+        <Patch Id="AFWHnnKwDoSMYgwtrogLS8" Name="Update" ParticipatingElements="E16Uyac8WcINC3Ym4qWOkO" />
         <ProcessDefinition Id="PwhdyMmE08qOgbTPzwKgs4">
           <Fragment Id="TXuCSFnlhbNQS6u09EEnvH" Patch="CeSpNUykYr4MEjdBKV8mIq" Enabled="true" />
           <Fragment Id="DDptVlu9ffqNQJnDz5Q28U" Patch="AFWHnnKwDoSMYgwtrogLS8" Enabled="true" />
         </ProcessDefinition>
         <Link Id="UxmkAX4sfndLhkPXS2TnCK" Ids="NecLKsVFnQcOVBBUca6cNw,PJZ7XDyG0r7LDLSu9cZwol" />
         <Link Id="A6E89F9Xuw3NQzLlrc9fy5" Ids="CSxF79tiO8uMm0zGPndmb3,TjivaknOkycNva9E0OtuK7" />
-        <Link Id="CDeyrQGUMGlNCbelkgsdNb" Ids="UKvQGesIgbDMSqCkjggMMI,L1A1mTci6AWMLR4XjHM52Q" />
-        <Link Id="Kq0pASUjELhQBcE9Z88gvR" Ids="HOhmuZlME9gNgAeYE2E5fX,H3hHY0ER8rxLrkLsh1GrcN" />
         <Link Id="GLITV1Dwt0qNCNEjxRU9MF" Ids="LpCPBtBqn0tLJ5XXMPAELm,PHZ2BzOVOc2PgifOul3FZH" />
         <Link Id="RjOkgsFIW7WOdNSwgvUG9Q" Ids="QLHcSwneKI3M8SnZDxXmdc,U2MMUKMxqPDPF8wMO9UAlP" />
-        <Link Id="Te9uAWumOREOe8dtgD1F1y" Ids="VYyOAsN3o2AO0jxg6jPoAM,OGwsPjuotOsO4nsUOOSSVL" />
         <Link Id="Mx2rQMqDqMwNpGuy8Saotk" Ids="Nzu7Y1KY7jdOEFVJICeIrl,K7ODSG90zhQQZHYh3pNQsE,TVUM5Lhce0vLWZ0lkEQeKl,PlYF5BLSE3tLKVudwQ7x2b" />
-        <Link Id="NWhkWkdUIMXMJng4wO5vkS" Ids="Vav7RVlxJRcOwEMHiEjIPZ,Nzu7Y1KY7jdOEFVJICeIrl" />
         <Link Id="Ddnl8RicGXDMjOrbOKmyLJ" Ids="QnzleUXMJ36QC30yIuGomh,HFVELKuEJcaL47oqfjNHEC" />
         <Link Id="JLewT4G0zpMPWTMVzfW344" Ids="EFIzFMRjivsLQ7RrbwSm3u,QdJ1zkkzITjLlwEOTwnncK" />
         <Link Id="DnDyn2OKceLLZJYbGIqo4g" Ids="Nzu7Y1KY7jdOEFVJICeIrl,CuC8axCxuTCOqDrnLZnriU" />
+        <Link Id="R6sFyLuUrHPLQaMsYqDlWv" Ids="QnzleUXMJ36QC30yIuGomh,VJuzuWpPl3DNYts9Olamhg" />
+        <Link Id="K8j5EGz42ubP9qnZtv0A6g" Ids="Uk7BzxFNWcjMRiAY5XBRug,LSTAHquLQxnLxgbfxeUnzO" />
+        <Link Id="GBHfiTJzjQ8QH8xdQ5GKF7" Ids="OqX89pIzQpRL75h8uuprVa,BwLRSagh5bnPtcO0V9Eac4" />
+        <Link Id="M1vuYU3qyYSLfSFCWJiyxm" Ids="Kb9ww7Bk8LbQB5qHpmBMDe,L1A1mTci6AWMLR4XjHM52Q" />
+        <Link Id="CORsRpLGOvPOcr7RZaKLWx" Ids="GrCDiYokH5APtKgfPZV2mQ,H3hHY0ER8rxLrkLsh1GrcN" />
+        <Link Id="E16Uyac8WcINC3Ym4qWOkO" Ids="Kb9ww7Bk8LbQB5qHpmBMDe,GrCDiYokH5APtKgfPZV2mQ" />
+        <Link Id="BJxCIhqJn3hLJSGt6rgQLX" Ids="Vav7RVlxJRcOwEMHiEjIPZ,Nzu7Y1KY7jdOEFVJICeIrl" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FlS9CTQr1NKMSfSueH1Bj3" Location="VL.OpenCV" Version="0.2.99-alpha" />
+  <NugetDependency Id="FlS9CTQr1NKMSfSueH1Bj3" Location="VL.OpenCV" Version="1.1.0" />
   <DocumentDependency Id="BPGQbUeHgccNkKrl3EEtJd" Location="../../VLML.ONNX.vl" />
+  <DocumentDependency Id="FhNW86jXwFfLSGXZThXazn" Location="../../VLML.ONNX2.vl" />
 </Document>
