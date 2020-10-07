@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>VLML.ONNX</id>
+    <id>VLML.ONNX_03</id>
     <version>1.0.1-beta</version>
-    <title>VLML.ONNX</title>
+    <title>VLML.ONNX_03</title>
     <authors>Hayden Anyasi</authors>
     <owners>naut</owners>
     <!-- <projectUrl>https://github.com/superbien/VL.ColorThief</projectUrl> -->
@@ -22,7 +22,7 @@
     <file src="..\lib-native\**" target="lib-native\" exclude="" />
     <file src="..\Resources\**" target="Resources\" exclude="" />
     <file src="..\Examples\**" target="Examples\" exclude="" />
-    <file src="*.vl" target="" exclude="" />
-    <file src="**\*.vl" target="" exclude="" />
+    <file src="*.vl" target="*.vl" exclude="" />
+    <file src="**\*.vl" target="**\*.vl" exclude="" />
   </files>
 </package>
